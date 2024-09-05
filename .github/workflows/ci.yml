@@ -21,4 +21,7 @@ jobs:
       - run: flutter analyze
       - run: dart run custom_lint
 
+      - name: Create .env file
+        run: |
+          touch .env
       - run: flutter test
